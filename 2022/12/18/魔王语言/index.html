@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>魔王语言 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="#include&lt;stdio.h&gt;#define _CRT_SECURE_NO_WARNINGS#include &lt;stdlib.h&gt;#include &lt;string.h&gt;&#x2F;魔王语言&#x2F; &#x2F;&#x2F;入栈void push(char* a, char c, int* top) {    a[top] &#x3D; c;    (to">
+<meta property="og:type" content="article">
+<meta property="og:title" content="魔王语言">
+<meta property="og:url" content="http://example.com/2022/12/18/%E9%AD%94%E7%8E%8B%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#include&lt;stdio.h&gt;#define _CRT_SECURE_NO_WARNINGS#include &lt;stdlib.h&gt;#include &lt;string.h&gt;&#x2F;魔王语言&#x2F; &#x2F;&#x2F;入栈void push(char* a, char c, int* top) {    a[top] &#x3D; c;    (to">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-18T13:20:53.000Z">
+<meta property="article:modified_time" content="2022-12-18T13:21:16.321Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,9 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-魔王语言" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-魔王语言" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/18/%E9%AD%94%E7%8E%8B%E8%AF%AD%E8%A8%80/" class="article-date">
   <time class="dt-published" datetime="2022-12-18T13:20:53.000Z" itemprop="datePublished">2022-12-18</time>
@@ -84,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/18/%E9%AD%94%E7%8E%8B%E8%AF%AD%E8%A8%80/">魔王语言</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      魔王语言
     </h1>
   
 
@@ -106,51 +108,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-约瑟夫环" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/18/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/" class="article-date">
-  <time class="dt-published" datetime="2022-12-18T13:18:16.000Z" itemprop="datePublished">2022-12-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/18/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/">约瑟夫环</a>
-    </h1>
+    <a href="/2022/12/18/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">约瑟夫环</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>#define _CRT_SECURE_NO_WARNINGS<br>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br>#include &lt;string.h&gt;<br>typedef struct huan {<br>    int number;<br>    int password;<br>    struct huan* next;<br>}LinkList, * LLinkList;</p>
-<p>LLinkList creat() {<br>    LLinkList huan &#x3D; (LLinkList)malloc(sizeof(LinkList));<br>    huan-&gt;next &#x3D; NULL;<br>    return huan;<br>}<br>LLinkList add(int x, int y, LLinkList huan) {<br>    LLinkList p &#x3D; (LLinkList)malloc(sizeof(LinkList));<br>    p-&gt;number &#x3D; y;<br>    p-&gt;password &#x3D; x;<br>    p-&gt;next &#x3D; huan;<br>    return p;<br>}<br>void print(int n, int m, LLinkList huan) {<br>    LLinkList p &#x3D; huan;<br>    for (int j &#x3D; 0; j &lt; n; j++) {<br>        for (int i &#x3D; 0; i &lt; m - 1; i++) {<br>            p &#x3D; p-&gt;next;<br>        }<br>        printf(“第%d个出位人的编号是:%d\n”, j + 1, p-&gt;next-&gt;number);<br>        m &#x3D; p-&gt;next-&gt;password;<br>        p-&gt;next &#x3D; p-&gt;next-&gt;next;<br>    }<br>}<br>int main() {<br>    int n;<br>    int m;<br>    printf(“请输入人数：”);<br>    scanf(“%d”, &amp;n);<br>    LLinkList huan &#x3D; creat();<br>    LLinkList p &#x3D; huan;<br>    for (int i &#x3D; 0; i &lt; n; i++) {<br>        int x[1000];<br>        printf(“请输入第%d个人密码：”, i + 1);<br>        scanf(“%d”, &amp;x[i]);<br>        p-&gt;next &#x3D; add(x[i], i + 1, huan-&gt;next);<br>        p &#x3D; p-&gt;next;<br>    }<br>    printf(“请输入初始密码：”);<br>    scanf(“%d”, &amp;m);<br>    print(n, m, huan);<br>    return 0;<br>}</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/18/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/" data-id="clbte96rv00009ov4bnve0reh" data-title="约瑟夫环" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
