@@ -1,0 +1,125 @@
+.nav-link{
+    font-weight: bold;
+    font-size: larger;
+}
+.transparent-bg {
+    background-color: transparent !important;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in-on-load {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.navbar {
+    position: fixed;  /* 导航栏固定在顶部 */
+    top: 0;           /* 从顶部开始 */
+    left: 0;          /* 从左边开始 */
+    width: 100%;      /* 跨越整个视口的宽度 */
+    z-index: 1000;    /* 确保导航栏在其他元素之上 */
+    transition: background-color 0.5s ease;
+}
+@keyframes slideDownFadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+        
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}
+
+.fade-in-slide-down {
+    animation: slideDownFadeIn 0.3s ease-in-out forwards;
+}
+
+.navbar.custom-navbar{
+    transition: background-color 0.5s ease;
+}
+
+
+
+.bg-image{
+    background-image:url('img/ca12c12c-b675-4b68-b594-f02bed48c3c1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; padding-top:0%;
+}
+.shadow-on {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  
+}
+.container{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.divider-row{
+    background-color: #999;
+    margin-top: 5%;
+    height: 2px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.introduce-r{
+    padding-left: 15%;
+    padding-top: 2%;
+}
+.introduce-text{
+    padding-top: 10%;
+}
+.container-grey{
+    background-color:#b8b8b8;
+    width: 100%;
+}
+.divider-row-white{
+    background-color: #ffffff;
+    margin-top: 5%;
+    height: 2px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5%;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img-fade-in {
+    opacity: 1;
+    
+    transition: opacity 1.3s
+}
+.shadow{
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center; 
+    
+    
+}
+.schoolimg{
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+}
+.container-bottom{
+    padding: 1%;
+}
+.animate-on-scroll:not(.img-fade-in) {
+    opacity: 0;
+   
+    transition: none;  /* 初始状态不需要过渡效果 */
+}
