@@ -1,3 +1,13 @@
+
+
+/* .container {
+  width: 1080px; 
+  max-width: 100%;
+} */
+.title{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .nav-link{
     font-weight: bold;
     font-size: larger;
@@ -78,7 +88,7 @@
     padding-top: 10%;
 }
 .container-grey{
-    background-color:#b8b8b8;
+    background-color:#b8b8b8 !important;
     width: 100%;
 }
 .divider-row-white{
@@ -107,6 +117,7 @@
     box-shadow: 0 15px 20px 0 rgba(0,0,0,0.1);
     background-size: cover;
     background-position: center; 
+    background-color: #ffffff;
     
     
 }
@@ -114,6 +125,8 @@
     height: 90%;
     width: 90%;
     padding: 5%;
+    padding-left: auto;
+    padding-right: auto;
 }
 .container-bottom{
     padding: 1%;
@@ -122,4 +135,7 @@
     opacity: 0;
    
     transition: none;  /* 初始状态不需要过渡效果 */
+}
+.keephigh{
+    height: 2vh;
 }
