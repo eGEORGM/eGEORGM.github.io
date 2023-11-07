@@ -1,7 +1,7 @@
 
 @media (max-width: 991px){
     .ai-img{
-        width: 100%;
+        width: 120%;
     }
 }
 @media(min-width:991px){
@@ -27,7 +27,7 @@
 }
 @media(min-width:991px){
     .nav-height{
-        width: 25%;
+        width: 20%;
     }
 }
 
@@ -101,7 +101,12 @@
 }
 
 
-
+.bg-image1{
+    background-image: url("img/message_dbg.png");
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; padding-top:0%;
+}
 .bg-image{
     background-image:url('img/ca12c12c-b675-4b68-b594-f02bed48c3c1.jpg'); 
     background-size: cover; 
