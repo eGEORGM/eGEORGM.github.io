@@ -1,5 +1,8 @@
 
-
+.container-md{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 /* .container {
   width: 1080px; 
   max-width: 100%;
