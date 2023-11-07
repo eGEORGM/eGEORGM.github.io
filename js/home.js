@@ -48,3 +48,17 @@ function checkVisibilityAndAnimate() {
         }
     });
 }
+$(document).ready(function() {
+    // 当窗口大小改变时执行
+    $(window).resize(function() {
+        var width = $(window).width();
+        if (width <= 991) {
+            $('.school-herf').addClass('row-cols-2');
+        } else {
+            $('.school-herf').removeClass('row-cols-2');
+        }
+    });
+
+    // 触发 resize 以便在页面加载时应用
+    $(window).trigger('resize');
+});

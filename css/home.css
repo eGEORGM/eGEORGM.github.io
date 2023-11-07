@@ -1,4 +1,28 @@
 
+@media (max-width: 991px){
+    .ai-img{
+        width: 100%;
+    }
+}
+@media(min-width:991px){
+    .ai-img{
+        width: 60%;
+    }
+}
+@media (max-width: 991px){
+    .nav-height{
+        width: 50%;
+    }
+    .school-herf{
+        --bs-row-cols: 2;
+    }
+}
+@media(min-width:991px){
+    .nav-height{
+        width: 25%;
+    }
+}
+
 .container-md{
     padding-top: 3%;
     padding-bottom: 3%;
@@ -38,6 +62,11 @@
     width: 100%;      /* 跨越整个视口的宽度 */
     z-index: 1000;    /* 确保导航栏在其他元素之上 */
     transition: background-color 0.5s ease;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.navbar-toggler {
+    margin-left: auto; /* 在小屏幕上使按钮右对齐 */
 }
 @keyframes slideDownFadeIn {
     from {
