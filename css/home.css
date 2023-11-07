@@ -39,6 +39,7 @@
     font-weight: bold;
     font-size: larger;
 }
+
 .transparent-bg {
     background-color: transparent !important;
 
@@ -63,10 +64,11 @@
     z-index: 1000;    /* 确保导航栏在其他元素之上 */
     transition: background-color 0.5s ease;
     justify-content: space-between;
-    flex-wrap: nowrap;
+
 }
 .navbar-toggler {
     margin-left: auto; /* 在小屏幕上使按钮右对齐 */
+    margin-top: -13%;
 }
 @keyframes slideDownFadeIn {
     from {
@@ -170,4 +172,37 @@
 }
 .keephigh{
     height: 2vh;
+}
+
+/* 基础字体大小 */
+.body {
+    font-size: 16px;
+}
+
+/* 屏幕宽度小于 1200px */
+@media (max-width: 1200px) {
+    .body {
+        font-size: 15px;
+    }
+}
+
+/* 屏幕宽度小于 992px */
+@media (max-width: 992px) {
+    .body {
+        font-size: 14px;
+    }
+}
+
+/* 屏幕宽度小于 768px */
+@media (max-width: 768px) {
+    .body {
+        font-size: 13px;
+    }
+}
+
+/* 屏幕宽度小于 576px */
+@media (max-width: 576px) {
+    .body {
+        font-size: 12px;
+    }
 }
