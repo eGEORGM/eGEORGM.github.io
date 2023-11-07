@@ -16,6 +16,14 @@
     .school-herf{
         --bs-row-cols: 2;
     }
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+        font-size: 220%; /* 在小屏幕上展开时的字体大小 */
+    }
+    .font-change{
+        font-size: 200% !important;
+    }
+    
 }
 @media(min-width:991px){
     .nav-height{
@@ -26,6 +34,7 @@
 .container-md{
     padding-top: 3%;
     padding-bottom: 3%;
+    overflow: hidden; 
 }
 /* .container {
   width: 1080px; 
@@ -174,35 +183,3 @@
     height: 2vh;
 }
 
-/* 基础字体大小 */
-.body {
-    font-size: 16px;
-}
-
-/* 屏幕宽度小于 1200px */
-@media (max-width: 1200px) {
-    .body {
-        font-size: 15px;
-    }
-}
-
-/* 屏幕宽度小于 992px */
-@media (max-width: 992px) {
-    .body {
-        font-size: 14px;
-    }
-}
-
-/* 屏幕宽度小于 768px */
-@media (max-width: 768px) {
-    .body {
-        font-size: 13px;
-    }
-}
-
-/* 屏幕宽度小于 576px */
-@media (max-width: 576px) {
-    .body {
-        font-size: 12px;
-    }
-}
