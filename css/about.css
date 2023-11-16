@@ -1,14 +1,3 @@
-
-@media (max-width: 991px){
-    .ai-img{
-        width: 120%;
-    }
-}
-@media(min-width:991px){
-    .ai-img{
-        width: 60%;
-    }
-}
 @media (max-width: 991px){
     .nav-height{
         width: 50%;
@@ -26,8 +15,6 @@
     .font-change1{
         font-size: 150% !important;
     }
-
-    
 }
 @media(min-width:991px){
     .nav-height{
@@ -40,10 +27,6 @@
     padding-bottom: 3%;
     overflow: hidden; 
 }
-/* .container {
-  width: 1080px; 
-  max-width: 100%;
-} */
 .title{
     padding-left: 5%;
     padding-right: 5%;
@@ -52,7 +35,7 @@
 .nav-link{
     font-weight: bold;
     font-size: x-large;
-    color: #cccccc !important;
+    color: #ffffff !important;
     transition: background-color 0.5s ease;
 }
 .tran-color{
@@ -108,95 +91,6 @@
 .navbar.custom-navbar{
     transition: background-color 0.5s ease;
 }
-
-
-.bg-image1{
-    background-image: url("img/message_dbg.png");
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; padding-top:0%;
-}
-.bg-image{
-    background-image:url('img/ca12c12c-b675-4b68-b594-f02bed48c3c1.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; padding-top:0%;
-}
-.shadow-on {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  
-}
-.container{
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-.divider-row{
-    background-color: #999;
-    margin-top: 5%;
-    height: 2px;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20%;
-}
-.introduce-r{
-    padding-left: 15%;
-    padding-top: 2%;
-}
-.introduce-text{
-    padding-top: 10%;
-}
-.container-grey{
-    background-color:#e9e9e9 !important;
-    width: 100%;
-}
-.divider-row-white{
-    background-color: #ffffff;
-    margin-top: 5%;
-    height: 2px;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 5%;
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.img-fade-in {
-    opacity: 1;
-    
-    transition: opacity 1.3s
-}
-.shadow{
-    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.1);
-    background-size: cover;
-    background-position: center; 
-    background-color: #ffffff;
-    
-    
-}
-.schoolimg{
-    height: 90%;
-    width: 90%;
-    padding: 5%;
-    padding-left: auto;
-    padding-right: auto;
-}
-.container-bottom{
-    padding: 1%;
-}
-.animate-on-scroll:not(.img-fade-in) {
-    opacity: 0;
-   
-    transition: none;  /* 初始状态不需要过渡效果 */
-}
-.keephigh{
-    height: 2vh;
-}
-
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
@@ -208,8 +102,86 @@
     
     font-size: medium;
 }
+.shadow{
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center; 
+    background-color: #ffffff;
+    
+    
+}
+.main-img{
+    background-image: url(../img/2019_Spring_Campus_js_IMG_8086.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 40vh;; 
+    padding-top:0%;
+    box-shadow:  inset 0 10px 30px 30px rgba(0, 0, 0, 0.5);
+    
+}
+.divider-row{
+    background-color: #999;
+    margin-top: 5%;
+    height: 2px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20%;
+}
+.introduce-text{
+    padding-top: 3%;
+}
+.introduce-img{
+    height:15vh;
+}
+.introduce-img1{
+    height:65vh;
+}
+.container-grey{
+    background-color:#e9e9e9 !important;
+    width: 100%;
+}
+.link-img{
+    width: 25vh;
+}
+.container-bottom{
+    padding: 1%;
+}
+.card-button {
+    border-radius: 20px; /* Rounded border */
+    border: 2px solid #a3a3a3; /* Red border */
+    color: #a3a3a3; /* Red text */
+}
+  
+.card-button:hover {
+    background-color: #a3a3a3; /* Red background on hover */
+    color: white; /* White text on hover */
+}
+.card-img-top{
+    height: 10vh;
+   width: 10vh;
+   padding-top: 3%;
+}
+.card{
+    margin-top: 10%;
+    height: auto;
+}
+.card1{
+    height: 90%;
+}
+.card-text {
+    text-align: justify;
+  }
+.school-img{
+    width: 60vh ;
+}
+.school-introduce{
+    padding: 3%;
+}
 .row{
     padding: 1%;
+}
+.kick-off-img{
+    width: 50vh;
 }
 .font{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -217,3 +189,13 @@
 .font-nav{
     font-family: 'Open Sans',sans-serif !important;
 }
+.img-fit{
+   height: auto; width: 100%;object-fit: contain;
+}
+@media (max-width: 991px) {
+    .transcol {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+    }
+  }
