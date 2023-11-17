@@ -111,7 +111,7 @@
     
 }
 .main-img{
-    background-image: url(../img/2019_Spring_Campus_js_IMG_8086.jpg);
+    background-image: url('/img/2019_Spring_Campus_js_IMG_8086.jpg');
     background-size: cover;
     background-position: center; 
     height: 40vh;; 
@@ -171,7 +171,7 @@
     
 }
 .img-school{
-    background-image: url(/img/ca12c12c-b675-4b68-b594-f02bed48c3c1.jpg);
+    background-image: url(../img/ca12c12c-b675-4b68-b594-f02bed48c3c1.jpg);
     background-size: cover;
     background-position: center; 
     height: 100vh;; 

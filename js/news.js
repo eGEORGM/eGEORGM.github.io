@@ -39,9 +39,9 @@ document.addEventListener("scroll", function() {
     var image = document.getElementById("dynamicImage"); // 获取图像元素
 
     if (window.pageYOffset > 1) {  // 假设在滚动超过 200px 时切换图像
-        image.src = "../img/logo2.png"; // 更改图像的 src
+        image.src = "img/logo2.png"; // 更改图像的 src
     } else {
-        image.src = "../img/logo3.png"; // 滚动回顶部时恢复初始图像
+        image.src = "img/logo3.png"; // 滚动回顶部时恢复初始图像
     }
 });
 document.addEventListener("DOMContentLoaded", function() {
