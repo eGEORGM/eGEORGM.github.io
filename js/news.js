@@ -68,7 +68,7 @@ function checkVisibilityAndAnimate() {
 }
 function fetchNews(page) {
     
-    fetch(`http://60.204.251.61:8000/api/news/?page=${page}`)
+    fetch(`https://60.204.251.61:8000/api/news/?page=${page}`)
         .then(response => response.json())
         .then(data => {
             
